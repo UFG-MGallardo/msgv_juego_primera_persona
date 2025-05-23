@@ -1,8 +1,7 @@
-const CACHE_NAME = "videojuego-primera-persona-gallardovasquez"
+const CACHE_NAME = "videojuego-primera-persona-gallardovasquez";
 
 self.addEventListener('install', event => {
     event.waitUntil((async() => {
-
         const cache = await caches.open(CACHE_NAME);
         cache.addAll([
             './',
@@ -10,13 +9,13 @@ self.addEventListener('install', event => {
             './js/script.js',
             './css/style.css'
         ]);
-    }))
+    })())
 });
 
-self.addEventListener('fetch', (event) => {
+self.addEventListener('fetch',(event) => {
     event.respondWith(
         (new Promise(
-            (resolve,reject) => {
+                (resolve, reject) => {
                     fetch(event.request).then(resolve).catch(reject);
                 }
             )

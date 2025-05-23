@@ -18,14 +18,14 @@
     ], 
     "screenshots":[
         {
-            "src": "./media/screenshoots/1920x913.png",
+            "src": "./media/screenshots/1920x913.png",
             "sizes": "1920x913",
             "type": "image/png",
             "form_factor": "wide",
             "label": "Vistas del videojuego en computadora"
         },
         {
-            "src": "./media/screenshoots/1442x3206.png",
+            "src": "./media/screenshots/1442x3206.png",
             "sizes": "1442x3206",
             "type": "image/png",
             "form_factor": "narrow",
